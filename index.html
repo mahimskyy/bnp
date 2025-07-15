@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>জারেক টিয়া পুট*কি মার</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 420px;
+      margin: auto;
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      font-size: 24px;
+      line-height: 1.5;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .count-box {
+      background: #f1f1f1;
+      padding: 25px 0;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .counter {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      font-size: 18px;
+      background: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0e5ed4;
+    }
+
+    .result {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 12px;
+      margin-top: 25px;
+      font-size: 16px;
+      background: #fff;
+    }
+
+    .result span {
+      color: red;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .leaderboard {
+      margin-top: 25px;
+      text-align: left;
+      padding: 15px;
+      border-radius: 10px;
+      background: #f7f7f7;
+      border: 1px solid #ddd;
+    }
+
+    .leaderboard h3 {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .leaderboard ol {
+      margin: 0;
+      padding-left: 20px;
+      font-weight: bold;
+    }
+
+    .messenger-share {
+      margin-top: 20px;
+    }
+
+    .messenger-share a {
+      background: #0084ff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .messenger-share a:hover {
+      background: #006fe6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+<h1>B.N.P Cho*d</h1>
+  <div class="container">
+    <h1>এক দুই তিন চার,<br>তারেক জিয়ার পুট*কি মার!</h1>
+
+    <div class="count-box">
+      <div class="counter" id="count">0</div>
+      <button class="btn" onclick="increaseCount()">পুট*কি মার 🍑</button>
+    </div>
+
+    <div class="result">
+     তারেক জিয়া কে <span id="liveCount">0</span> বার পুট*কি মারা হয়েছে 
+    </div>
+
+    <div class="leaderboard">
+      <h3>🏆 লিডারবোর্ড</h3>
+      <ol>
+        <li>🥇 Sadikur Bhai - 34,699 বার পুট*কি মেরেছে</li>
+        <li>🥈 Rakib Mia - 23,785 বার পুট*কি মেরেছে</li>
+        <li>🥉 Lalu Kaka - 10,389 বার পুট*কি মেরেছে</li>
+      </ol>
+    </div>
+
+    <div class="footer">
+      <p>
+        টিনের চালে কাওয়া, তারেক জিয়়ার শাউয়া<br>
+        টিনের চালে কাওয়া, বিএনপির শাউয়া
+      </p>
+
+     <button onclick="copyLink(this)" data-link="https://tarekziaa.blogspot.com/2025/07/blog-post.html" style="
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+" 
+onmouseover="this.style.backgroundColor='#0056b3'" 
+onmouseout="this.style.backgroundColor='#007bff'">
+  Share With Friends🚀
+</button>
+
+<script>
+  function copyLink(button) {
+    const link = button.getAttribute('data-link');
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(link).then(() => {
+        alert('Link copied to clipboard!');
+      }).catch(() => {
+        fallbackCopy(link);
+      });
+    } else {
+      fallbackCopy(link);
+    }
+  }
+
+  function fallbackCopy(text) {
+    const input = document.createElement('input');
+    input.value = text;
+    document.body.appendChild(input);
+    input.select();
+    input.setSelectionRange(0, 99999);
+
+    try {
+      const successful = document.execCommand('copy');
+      if (successful) {
+        alert('Link copied to clipboard!');
+      } else {
+        alert('Failed to copy! Please copy manually: ' + text);
+      }
+    } catch (err) {
+      alert('Failed to copy! Please copy manually: ' + text);
+    }
+
+    document.body.removeChild(input);
+  }
+</script>
+
+
+  <!-- Funny AHH Sound -->
+  <audio id="tapSound" src="https://www.myinstants.com/media/sounds/anime-wow-sound-effect.mp3" preload="auto"></audio>
+
+  <script>
+    let count = 0;
+    const countDisplay = document.getElementById("count");
+    const liveCount = document.getElementById("liveCount");
+    const sound = document.getElementById("tapSound");
+
+    function increaseCount() {
+      count++;
+      countDisplay.textContent = count;
+      liveCount.textContent = count;
+      sound.currentTime = 0;
+      sound.play().catch(e => {
+        console.log("Sound play error:", e);
+      });
+    }
+  </script>
+<footer style="
+  background-color: #fff0f0;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #ff0000;
+  margin-top: 40px;
+">
+  <h2 style="
+    font-weight: bold;
+    font-size: 24px;
+    color: red;
+    margin: 0;
+  ">
+    Created By Bangladesh Awami League
+  </h2>
+</footer>
+
+
+</body>
+</html>
+    <ins style="width: 300px;height:250px" data-width="300" data-height="250" class="v9a6b311b02" data-domain="//data741.click" data-affquery="/5b1c078c59635613c1c2/9a6b311b02/?placementName=default"><script src="//data741.click/js/responsive.js" async></script></ins>
+    
+    
